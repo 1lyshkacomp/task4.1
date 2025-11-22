@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>User System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="register-card">
+      <h2>Регистрация</h2>
+      <form id="regForm">
+        <div class="input-group">
+          <input type="text" id="regNick" required placeholder=" ">
+          <label>Никнейм</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="regName" required placeholder=" ">
+          <label>Имя</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="regLast" required placeholder=" ">
+          <label>Фамилия</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="regPass" required placeholder=" ">
+          <label>Пароль</label>
+        </div>
+        <button type="submit">Создать аккаунт</button>
+      </form>
+      <p class="switch-text">Уже есть аккаунт? <a href="#" id="showLogin">Войти</a></p>
+    </div>
+
+    <div class="card hidden" id="login-card">
+      <h2>Личный кабинет</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="text" id="loginNick" required placeholder=" ">
+          <label>Никнейм</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="loginPass" required placeholder=" ">
+          <label>Пароль</label>
+        </div>
+        <button type="submit" class="btn-login">Войти / Обновить данные</button>
+      </form>
+
+      <div id="profile-edit" class="hidden">
+        <h3>Изменить данные</h3>
+        <div class="input-group">
+          <input type="text" id="editName" placeholder=" ">
+          <label>Новое Имя</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="editLast" placeholder=" ">
+          <label>Новая Фамилия</label>
+        </div>
+        <button id="saveBtn" class="btn-save">Сохранить изменения</button>
+        <button id="changePassBtn" class="btn-save">Сменить пароль</button>
+        <button id="logoutBtn" class="btn-logout">Выйти</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

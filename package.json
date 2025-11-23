@@ -1,7 +1,7 @@
 {
-  "name": "my-project",
+  "name": "user-auth-system",
   "version": "1.0.0",
-  "description": "User management API + frontend (Basic Auth, PBKDF2, validation, pagination)",
+  "description": "Secure User API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -18,7 +18,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  },
-  "author": "",
-  "license": "MIT"
+  }
 }
